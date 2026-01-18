@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharunkumar Velayutham - Portfolio</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tharunkumar Velayutham</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5">
+        <div class="container text-center text-white">
+            <h1 class="display-4">Tharunkumar Velayutham</h1>
+            <p class="lead">I'm a <span id="typed"></span></p>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="text-white mb-4">About Me</h2>
+                    <p>
+                        A passionate and versatile developer with expertise in building robust backend systems and dynamic front-end experiences. My experience as a data analyst allows me to bring a data-driven approach to problem-solving, creating efficient and scalable solutions. I am dedicated to writing clean code and exploring new technologies to drive innovation.
+                    </p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="text-white mb-4">My Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                        <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                        <div class="skill-item"><i class="fab fa-react"></i> React</div>
+                        <div class="skill-item"><i class="fab fa-node-js"></i> Node.js</div>
+                        <div class="skill-item"><i class="fab fa-linux"></i> Linux</div>
+                        <div class="skill-item"><i class="fas fa-chart-line"></i> Data Analysis</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-dark">
+        <div class="container">
+            <h2 data-aos="fade-up" class="text-center text-white mb-4">Projects</h2>
+            <div class="row">
+                <div data-aos="fade-up" data-aos-delay="100" class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">A brief description of your first project will go here. You can update this later with details about the technologies used and the problems you solved.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">A brief description of your second project will go here. You can update this later with details about the technologies used and the problems you solved.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal2">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300" class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">A brief description of your third project will go here. You can update this later with details about the technologies used and the problems you solved.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal3">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 data-aos="fade-up" class="text-center text-white mb-4">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+			<input type="hidden" name="access_key" value="5661d5ed-dae1-4c89-9982-3060cb5744eb">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <div class="social-icons mb-3">
+                <a href="#" class="text-white me-3"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            <p>&copy; 2026 Tharunkumar Velayutham. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project 1</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This is a more detailed description of Project 1. You can include information about the project's purpose, the technologies you used, and any challenges you faced. You can also include images or a video demo.</p>
+                    <strong>Technologies:</strong> Python, Flask, SQLite
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-primary">Code</a>
+                    <a href="#" class="btn btn-secondary">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add more modals as needed -->
+
+    <a href="#" id="back-to-top" class="btn btn-light"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
