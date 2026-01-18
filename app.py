@@ -17,6 +17,3 @@ def projects():
 @app.route('/contact')
 def contact():
     return render_template('index.html', _anchor='contact')
-
-if __name__ == '__main__':
-    app.run(debug=True)
